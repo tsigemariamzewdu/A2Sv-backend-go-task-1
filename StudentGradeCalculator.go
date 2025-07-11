@@ -25,7 +25,7 @@ func main() {
 	fmt.Scan(&name)
 	fmt.Println("Beautifull Name!, How many courses have you taken this semester?")
 	fmt.Scan(&numberOfCourses)
-	fmt.Printf("cool %v we will be right back with your average for %v courses! so you will be telling us the subject and the grade that you receive for that specific subject! ",name,numberOfCourses)
+	fmt.Printf("cool %v we will be right back with your average for %v courses! ",name,numberOfCourses)
 	
 	var listOfGrades []int
 	for i:=0; i<int(numberOfCourses); i++{
@@ -42,7 +42,8 @@ func main() {
 
 
 		}else{
-			fmt.Println("Invalid greade.please enter between 0 and 100")
+			fmt.Println("Invalid grade.please enter between 0 and 100")
+			i--  
 
 		}
 	
